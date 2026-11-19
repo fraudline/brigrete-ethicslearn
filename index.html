@@ -583,7 +583,7 @@ document.getElementById("q").addEventListener("input", e => { q = e.target.value
 const tot = k => MODULES.reduce((a, m) => a + m[k], 0);
 document.getElementById("stats").innerHTML =
   `<div class="stat"><b>${MODULES.length}</b><span>modules</span></div>
-   <div class="stat"><b>${new Set(MODULES.map(m => m.partner)).size}</b><span>partner institutions</span></div>
+   <div class="stat"><b>${new Set(MODULES.map(m => m.partner.split(" / ")[0])).size}</b><span>partner institutions</span></div>
    <div class="stat"><b>${tot("videos")}</b><span>video lectures</span></div>
    <div class="stat"><b>${tot("quizzes")}</b><span>practice questions</span></div>`;
 document.querySelector(".tabs").addEventListener("click", e => {
