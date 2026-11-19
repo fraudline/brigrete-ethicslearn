@@ -59,7 +59,7 @@ a{color:var(--brand)}
 .tabs{display:flex;flex-wrap:wrap;gap:8px;border-bottom:1px solid var(--line);margin-bottom:16px}
 .tabs button{border:0;background:none;font:600 15px "Space Grotesk",sans-serif;color:var(--muted);padding:10px 4px;margin-right:16px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px}
 .tabs button[aria-selected=true]{color:var(--brand);border-bottom-color:var(--brand)}
-.lmscta{display:none}.embedded .lmscta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 24px;margin:24px 0 8px}.lmscta h2{font-size:21px;margin:0 0 6px}.lmscta p{margin:0;color:var(--muted);max-width:640px}.ctabtns{display:flex;gap:10px;flex-wrap:wrap}.embedded .guide,.embedded .info{display:none}@media (min-width:900px){.embedded .grid{grid-template-columns:repeat(3,1fr)}}
+.lmscta{display:none}.embedded .lmscta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 24px;margin:24px 0 8px}.lmscta h2{font-size:21px;margin:0 0 6px}.lmscta p{margin:0;color:var(--muted);max-width:640px}.ctabtns{display:flex;gap:10px;flex-wrap:wrap}.embedded .guide,.embedded .info{display:none}@media (min-width:900px){.embedded .grid{grid-template-columns:repeat(3,1fr)}}@media (min-width:900px){.embedded .thumb{aspect-ratio:3/1}.embedded .card .body{padding:12px 16px 14px}.embedded .card h3{font-size:17.5px;margin:2px 0 6px}.embedded .card p{font-size:14px;line-height:1.45}}
 .pane ol{margin:0;padding-left:22px}
 .pane li{margin:8px 0}.pane details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0}.pane summary{font-weight:600;cursor:pointer}.pane details[open] summary{margin-bottom:4px}
 .tip{background:var(--tint);border-left:3px solid var(--brand);padding:10px 14px;border-radius:6px;font-size:14px;color:var(--muted);margin:14px 0 0}
@@ -506,6 +506,25 @@ const MODULES = [
   "size": "48 MB",
   "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/ai-clinical-research-scorm12.zip",
   "scorm_size": "49 MB"
+ },
+ {
+  "slug": "rri",
+  "title": "Responsible Research and Innovation: Ethics and Impact in Research Practice",
+  "theme": "Research practice",
+  "partner": "Fraud Line / INNOFY",
+  "desc": "Align research with society: the four RRI dimensions, six design steps, an RRI lens for ethics review, institutional levers, and three case studies.",
+  "authors": [
+   "Vassilis Stamatopoulos"
+  ],
+  "chapters": 23,
+  "videos": 6,
+  "quizzes": 30,
+  "thumb": "thumbs/rri.jpg",
+  "url": "modules/rri/",
+  "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/rri.h5p",
+  "size": "29 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/rri-scorm12.zip",
+  "scorm_size": "28 MB"
  }
 ];
 const THEMES = ["All", ...new Set(MODULES.map(m => m.theme))];
