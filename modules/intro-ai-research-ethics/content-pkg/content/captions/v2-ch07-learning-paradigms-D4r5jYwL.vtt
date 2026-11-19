@@ -1,0 +1,58 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.540
+We have a massive data set of emails.
+
+2
+00:00:02.820 --> 00:00:06.540
+Every single message has already been
+explicitly categorized as either
+
+3
+00:00:06.580 --> 00:00:09.280
+legitimate communication or malicious
+spam.
+
+4
+00:00:09.620 --> 00:00:13.540
+Given this highly structured, pre-labeled
+data, we need to determine the most
+
+5
+00:00:13.580 --> 00:00:16.680
+suitable AI model to use for a filtering
+application.
+
+6
+00:00:17.040 --> 00:00:21.060
+Because the data is explicitly tagged
+prior to training, supervised machine
+
+7
+00:00:21.100 --> 00:00:22.900
+learning is the correct methodology.
+
+8
+00:00:23.280 --> 00:00:25.560
+This slide outlines learning
+methodologies.
+
+9
+00:00:25.640 --> 00:00:29.540
+We avoid unsupervised machine learning or
+a large language model here because
+
+10
+00:00:29.580 --> 00:00:32.620
+our data is not already has precise
+historical labels.
+
+11
+00:00:32.940 --> 00:00:36.780
+Effective AI deployment depends entirely
+on understanding the structure of
+
+12
+00:00:36.820 --> 00:00:39.096
+your initial data before any training even

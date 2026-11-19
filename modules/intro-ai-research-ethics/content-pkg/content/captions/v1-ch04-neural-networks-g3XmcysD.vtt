@@ -1,0 +1,68 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.740
+This diagram illustrates a neural network.
+
+2
+00:00:03.100 --> 00:00:05.720
+Data processing begins at the input layer.
+
+3
+00:00:06.000 --> 00:00:09.940
+Information cascades through hidden
+layers, where interconnected neurons
+
+4
+00:00:09.980 --> 00:00:13.020
+extract mathematical features and learn
+patterns.
+
+5
+00:00:13.440 --> 00:00:17.120
+The final computation delivers a
+prediction at the output layer.
+
+6
+00:00:17.540 --> 00:00:21.860
+While the theoretical architecture existed
+for decades, they only began to
+
+7
+00:00:21.900 --> 00:00:25.860
+surpass traditional machine learning
+accuracy around the year 2012.
+
+8
+00:00:26.440 --> 00:00:30.120
+This capability leap wasn't a sudden
+algorithmic breakthrough,
+
+9
+00:00:30.440 --> 00:00:34.460
+it depended on massive new digital
+datasets, which required an enormous
+
+10
+00:00:34.500 --> 00:00:37.200
+increase in physical computational
+hardware.
+
+11
+00:00:37.760 --> 00:00:41.940
+Because these networks function as dense,
+opaque calculation engines,
+
+12
+00:00:41.980 --> 00:00:45.980
+relying entirely on ingested information,
+their primary ethical
+
+13
+00:00:46.020 --> 00:00:50.280
+vulnerabilities are embedded in the data
+sourcing process long before the
+
+14
+00:00:50.320 --> 00:00:51.940
+model makes a single decision.

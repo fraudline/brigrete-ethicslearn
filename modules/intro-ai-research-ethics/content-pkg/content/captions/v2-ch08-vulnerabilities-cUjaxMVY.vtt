@@ -1,0 +1,156 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.720
+begins. In our second scenario, a self-
+driving car's AI system approaches an
+
+2
+00:00:04.760 --> 00:00:07.400
+intersection and misreads a physical stop
+sign.
+
+3
+00:00:07.740 --> 00:00:11.700
+Small, targeted stickers placed on the
+physical sign act as input changes that
+
+4
+00:00:11.740 --> 00:00:13.380
+force the AI to make a In, danger.
+
+5
+00:00:14.320 --> 00:00:16.600
+Data Poisoning Model Evasion, Ethics
+Review,
+
+6
+00:00:18.700 --> 00:00:23.500
+Adversarial Attacks which targets the
+model's live runtime phase rather than
+
+7
+00:00:23.540 --> 00:00:29.120
+its training. Real-world environments
+introduce malicious physical inputs that
+
+8
+00:00:29.160 --> 00:00:32.700
+successfully break otherwise perfectly
+trained AI models.
+
+9
+00:00:33.260 --> 00:00:36.720
+Now consider a corporate algorithm
+designed to sort resumes.
+
+10
+00:00:37.180 --> 00:00:41.420
+In practice, the system systematically
+penalizes female candidates.
+
+11
+00:00:41.820 --> 00:00:44.340
+This failure is not a live hack.
+
+12
+00:00:44.400 --> 00:00:48.360
+The historical hiring records used to
+build the dataset contained an embedded
+
+13
+00:00:48.400 --> 00:00:53.420
+bias. Returning to the vulnerabilities
+framework, this is defined as data
+
+14
+00:00:53.460 --> 00:00:58.340
+poisoning. Unlike an adversarial attack
+that happens live, data poisoning
+
+15
+00:00:58.380 --> 00:01:02.240
+corrupts the model from the ground up
+during its foundational training phase,
+
+16
+00:01:02.280 --> 00:01:06.920
+before it ever launches. This knowledge
+check slide asks us to consider a
+
+17
+00:01:06.960 --> 00:01:11.860
+critical question. At what exact stage can
+a malicious intervention cause an
+
+18
+00:01:11.900 --> 00:01:13.760
+AI model to reach the wrong conclusion?
+
+19
+00:01:13.800 --> 00:01:18.560
+Attacks occur both during the foundational
+training phase and during the
+
+20
+00:01:18.600 --> 00:01:21.060
+active inference, or runtime phase.
+
+21
+00:01:21.580 --> 00:01:26.240
+Properly evaluating AI risk requires
+mapping these threats across the system's
+
+22
+00:01:26.280 --> 00:01:31.420
+entire lifecycle. In our final scenario, a
+healthcare research group deploys
+
+23
+00:01:31.460 --> 00:01:35.500
+an active AI model. The raw patient
+database is locked away.
+
+24
+00:01:35.680 --> 00:01:40.080
+However, attackers use specific querying
+techniques to extract private records
+
+25
+00:01:40.120 --> 00:01:41.540
+directly from the finished model.
+
+26
+00:01:41.580 --> 00:01:45.920
+Looking at the bottom left of this chart,
+we see this defined as model
+
+27
+00:01:45.960 --> 00:01:49.820
+inversion. The model itself becomes the
+vector for data loss.
+
+28
+00:01:50.260 --> 00:01:54.380
+Finally, we have model evasion, where
+crafted inputs successfully bypass
+
+29
+00:01:54.420 --> 00:01:59.000
+models' active detection. We plot all four
+vulnerabilities on a comparative
+
+30
+00:01:59.040 --> 00:02:03.380
+framework based on two factors, when they
+happen and what they manipulate.
+
+31
+00:02:03.940 --> 00:02:08.080
+Mastering AI evaluation means knowing
+exactly when and how a model's
+
+32
+00:02:08.120 --> 00:02:11.680
+methodology or its underlying data can be
+turned against it.

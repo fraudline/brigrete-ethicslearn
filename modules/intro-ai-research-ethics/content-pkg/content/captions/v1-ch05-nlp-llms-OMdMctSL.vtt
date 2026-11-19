@@ -1,0 +1,74 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.280
+This intersection of computer science, AI,
+and computational linguistics is
+
+2
+00:00:05.320 --> 00:00:07.480
+known as natural language processing.
+
+3
+00:00:07.840 --> 00:00:11.200
+It allows computers to analyze and
+generate human text.
+
+4
+00:00:11.640 --> 00:00:16.140
+Large language models are a specific class
+of AI trained on massive text
+
+5
+00:00:16.180 --> 00:00:18.800
+datasets to simulate human-like
+communication.
+
+6
+00:00:18.840 --> 00:00:22.700
+Looking at this graphic, the core mechanic
+is clear.
+
+7
+00:00:22.980 --> 00:00:27.480
+These models do not think. They operate
+purely on next word prediction,
+
+8
+00:00:27.560 --> 00:00:31.220
+assigning statistical probabilities to
+potential following words.
+
+9
+00:00:31.600 --> 00:00:35.720
+Chaining these guesses together outputs
+coherent sentences, creating what we
+
+10
+00:00:35.760 --> 00:00:37.860
+call the illusion of understanding.
+
+11
+00:00:38.220 --> 00:00:42.080
+A large language model does not comprehend
+language in the human sense.
+
+12
+00:00:42.120 --> 00:00:45.100
+It relies exclusively on mathematical
+frequencies.
+
+13
+00:00:45.260 --> 00:00:48.860
+We must guard against anthropomorphizing
+these systems.
+
+14
+00:00:49.100 --> 00:00:54.820
+Assigning human intent, reasoning, or
+factual comprehension to an LLM's output
+
+15
+00:00:54.860 --> 00:00:59.000
+invites severe methodological and ethical
+errors in research.

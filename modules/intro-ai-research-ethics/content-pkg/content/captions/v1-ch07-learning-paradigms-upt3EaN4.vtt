@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.600
+On the left is supervised learning
+requiring explicit human labeling.
+
+2
+00:00:05.940 --> 00:00:10.240
+On the right is unsupervised learning
+where the model identifies internal
+
+3
+00:00:10.280 --> 00:00:13.820
+groupings entirely on its own from
+unorganized data.
+
+4
+00:00:14.300 --> 00:00:18.140
+The final functional software artifact
+that results from this training,
+
+5
+00:00:18.280 --> 00:00:22.104
+the component used by the researcher to
+make predictions, is called the
