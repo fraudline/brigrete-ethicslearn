@@ -1,0 +1,64 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.240
+The second pillar of this linguistic
+architecture is ambiguity.
+
+2
+00:00:04.720 --> 00:00:08.220
+This occurs when expressions contain
+multiple distinct meanings,
+
+3
+00:00:08.280 --> 00:00:11.900
+whether through lexical, structural, or
+referential errors.
+
+4
+00:00:12.280 --> 00:00:16.120
+An argument becomes invalid if it subtly
+shifts the meaning of an ambiguous
+
+5
+00:00:16.160 --> 00:00:20.700
+term between a premise and a conclusion, a
+flaw known as the equivocation
+
+6
+00:00:20.740 --> 00:00:25.520
+fallacy. The third pillar, vagueness, is
+structurally different.
+
+7
+00:00:25.880 --> 00:00:30.140
+It involves words with imprecise boundaries,
+where it is unclear if an object
+
+8
+00:00:30.180 --> 00:00:32.080
+belongs in the term's extension.
+
+9
+00:00:32.580 --> 00:00:36.620
+Terms like tall or old lack exact
+numerical cutoffs.
+
+10
+00:00:36.960 --> 00:00:41.480
+In poorly constructed research proposals,
+vague language often hides errors in
+
+11
+00:00:41.520 --> 00:00:43.180
+the underlying moral reasoning.
+
+12
+00:00:43.620 --> 00:00:48.720
+Auditing for ambiguity and vagueness
+effectively sanitizes the data before it
+
+13
+00:00:48.760 --> 00:00:52.460
+ever enters the formal logical deduction
+phase of the review.
