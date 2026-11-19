@@ -1,0 +1,185 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.540
+Consider Care4U, an AI system designed to
+detect early signs of patient
+
+2
+00:00:05.580 --> 00:00:10.100
+deterioration in a hospital setting,
+aiming to reduce unnecessary ICU
+
+3
+00:00:10.140 --> 00:00:14.980
+admissions. The architecture relies on
+continuous biometric data streamed from
+
+4
+00:00:15.020 --> 00:00:19.480
+wearable sensors. This live feed is
+evaluated against a neural network trained
+
+5
+00:00:19.520 --> 00:00:22.340
+on 50,000 historical hospital cases.
+
+6
+00:00:22.740 --> 00:00:26.700
+The model continuously monitors vitals,
+pushing automated medical alerts
+
+7
+00:00:26.740 --> 00:00:28.940
+directly to the nursing staff's mobile
+devices.
+
+8
+00:00:28.980 --> 00:00:34.100
+Operating within the European Union, a
+tool like this falls under the EU-AI
+
+9
+00:00:34.140 --> 00:00:39.140
+Act. Because it makes medical determinations,
+it triggers strict regulatory
+
+10
+00:00:39.180 --> 00:00:42.340
+classifications for high-risk AI
+applications.
+
+11
+00:00:42.720 --> 00:00:46.680
+Deploying an algorithm in a live clinical
+environment means the stakes are
+
+12
+00:00:46.720 --> 00:00:51.020
+literal life and death. The ethical
+scrutiny applied by the committee must
+
+13
+00:00:51.060 --> 00:00:53.240
+scale to match that level of risk.
+
+14
+00:00:53.640 --> 00:00:57.400
+This checklist divides our evaluation of
+the Care-for-You system into two
+
+15
+00:00:57.440 --> 00:01:02.040
+distinct dimensions. human and social,
+alongside technical and legal.
+
+16
+00:01:02.460 --> 00:01:06.040
+Under the human dimension, we must
+evaluate automation bias.
+
+17
+00:01:06.380 --> 00:01:10.520
+If the system is highly efficient, nurses
+may begin to rely too heavily on the
+
+18
+00:01:10.560 --> 00:01:14.020
+automated alerts, eroding their
+independent clinical judgment.
+
+19
+00:01:14.540 --> 00:01:17.160
+We also have to interrogate the data set
+itself.
+
+20
+00:01:17.440 --> 00:01:21.920
+50,000 cases is a large number, but if
+those historical files under-represent
+
+21
+00:01:21.960 --> 00:01:25.940
+women, older adults, or minority groups,
+the system will perform worse for
+
+22
+00:01:25.980 --> 00:01:30.200
+them in real time. We must also factor in
+the psychological impact.
+
+23
+00:01:30.800 --> 00:01:35.200
+Continuous algorithmic monitoring can
+severely increase patient anxiety and
+
+24
+00:01:35.240 --> 00:01:38.800
+shift the fundamental dynamic of the
+doctor-patient relationship.
+
+25
+00:01:39.420 --> 00:01:42.020
+Shifting to the legal dimension, we look
+at consent.
+
+26
+00:01:42.480 --> 00:01:45.800
+Patients must be clearly informed about
+the real-time data collection,
+
+27
+00:01:45.840 --> 00:01:49.620
+and they must have the ability to opt out
+of the AI monitoring without
+
+28
+00:01:49.660 --> 00:01:51.620
+compromising their standard of care.
+
+29
+00:01:51.960 --> 00:01:53.960
+We return to the black box problem.
+
+30
+00:01:54.080 --> 00:01:58.200
+If a clinician cannot look at an alert and
+understand exactly why the system
+
+31
+00:01:58.240 --> 00:02:02.520
+issued it, they are forced to either
+blindly trust a machine or ignore the
+
+32
+00:02:02.560 --> 00:02:05.700
+warning entirely. And finally,
+accountability.
+
+33
+00:02:06.120 --> 00:02:10.180
+If the system misses a critical
+deterioration event or issues a false alert
+
+34
+00:02:10.220 --> 00:02:14.260
+that leads to the wrong treatment, the
+proposal must clearly define who holds
+
+35
+00:02:14.300 --> 00:02:16.380
+the legal and ethical responsibility.
+
+36
+00:02:16.840 --> 00:02:21.080
+An AI tool deployed in a high stakes
+environment is only as robust as its
+
+37
+00:02:21.120 --> 00:02:23.420
+weakest technical, legal, or ethical link.
+
+38
+00:02:23.460 --> 00:02:28.400
+Both of these cases demonstrate a core
+principle for Essex committees.
