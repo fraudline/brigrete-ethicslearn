@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EthicsLearn · BriGRETE</title>
-<meta name="description" content="Free interactive research-ethics training modules from the BriGRETE Erasmus+ project. Learn online or download the H5P files.">
+<meta name="description" content="Free interactive research-ethics training modules from the BriGRETE Erasmus+ project. Learn online or download the H5P files and SCORM packages.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -43,7 +43,7 @@ a{color:var(--brand)}
 .authors{font-size:13px;color:var(--muted);margin-bottom:12px}
 .meta{display:flex;gap:14px;font-size:13px;color:var(--muted);margin:auto 0 14px;padding-top:10px;border-top:1px dashed var(--line)}
 .meta b{color:var(--ink)}
-.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.actions .primary{grid-column:1/-1}
 .actions .btn{justify-content:center;padding:10px 8px}
 .btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;padding:10px 14px;font:600 14.5px "Space Grotesk",sans-serif;text-decoration:none;border:1.5px solid var(--brand)}
 .btn.primary{background:var(--brand);color:#fff}
@@ -59,8 +59,9 @@ a{color:var(--brand)}
 .tabs{display:flex;flex-wrap:wrap;gap:8px;border-bottom:1px solid var(--line);margin-bottom:16px}
 .tabs button{border:0;background:none;font:600 15px "Space Grotesk",sans-serif;color:var(--muted);padding:10px 4px;margin-right:16px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px}
 .tabs button[aria-selected=true]{color:var(--brand);border-bottom-color:var(--brand)}
+.lmscta{display:none}.embedded .lmscta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 24px;margin:24px 0 8px}.lmscta h2{font-size:21px;margin:0 0 6px}.lmscta p{margin:0;color:var(--muted);max-width:640px}.ctabtns{display:flex;gap:10px;flex-wrap:wrap}.embedded .guide,.embedded .info{display:none}@media (min-width:900px){.embedded .grid{grid-template-columns:repeat(3,1fr)}}
 .pane ol{margin:0;padding-left:22px}
-.pane li{margin:8px 0}
+.pane li{margin:8px 0}.pane details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0}.pane summary{font-weight:600;cursor:pointer}.pane details[open] summary{margin-bottom:4px}
 .tip{background:var(--tint);border-left:3px solid var(--brand);padding:10px 14px;border-radius:6px;font-size:14px;color:var(--muted);margin:14px 0 0}
 code{background:#f1edf2;padding:1px 6px;border-radius:4px}
 .info{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:20px 0 48px}
@@ -81,7 +82,7 @@ footer .flag{flex:none;width:64px;height:43px;background:#039;border-radius:3px;
   <div class="wrap">
     <div class="eyebrow">BriGRETE · EthicsLearn</div>
     <h1>Interactive research-ethics training</h1>
-    <p>Free, self-paced modules written by research-ethics experts at the BriGRETE partner universities and research centres. Learn online in your browser, or download each module as an H5P file for your own learning platform.</p>
+    <p>Free, self-paced modules written by research-ethics experts at the BriGRETE partner universities and research centres. Learn online in your browser, or download each module as an H5P file or SCORM package for your own learning platform.</p>
     <div class="stats" id="stats"></div>
   </div>
 </header>
@@ -90,7 +91,7 @@ footer .flag{flex:none;width:64px;height:43px;background:#039;border-radius:3px;
   <section class="how" aria-label="How it works">
     <div><b>1 · Choose</b><p>Pick a module by topic. Each one is an interactive book with chapters, short videos and knowledge checks.</p></div>
     <div><b>2 · Learn</b><p>Click <strong>Start module</strong> to open it in a new tab. Videos have English subtitles (CC button). Nothing to install, no sign-up.</p></div>
-    <div><b>3 · Reuse</b><p>Teachers and ethics committees can <strong>download the H5P file</strong> and add it to their own LMS. <a href="#use-h5p">See how</a>.</p></div>
+    <div><b>3 · Reuse</b><p>Teachers and ethics committees can <strong>download the H5P or SCORM file</strong> and add it to their own LMS. <a href="#use-h5p">See how</a>.</p></div>
   </section>
 
   <div class="bar">
@@ -100,11 +101,18 @@ footer .flag{flex:none;width:64px;height:43px;background:#039;border-radius:3px;
   </div>
   <div class="grid" id="grid"></div>
 
+  <section class="lmscta">
+    <div><h2>Use the modules in your own LMS</h2>
+    <p>Every module comes as an <strong>H5P file</strong> (Moodle, WordPress, Lumi) and a <strong>SCORM 1.2 package</strong> (Canvas, Blackboard, Brightspace, Moodle and almost any LMS). Step-by-step instructions for each platform:</p></div>
+    <div class="ctabtns"><a class="btn primary" href="./?tab=moodle#use-h5p" target="_blank" rel="noopener">H5P instructions</a><a class="btn ghost" href="./?tab=scorm#use-h5p" target="_blank" rel="noopener">SCORM instructions</a></div>
+  </section>
+
   <section class="guide" id="use-h5p">
-    <h2>How to use the H5P files in your own LMS</h2>
-    <p class="lead">Every module can be downloaded as a standard <strong>.h5p</strong> file. H5P is an open format, so you can add the modules to your institution's learning platform, track learners' scores there, translate them or adapt them to your course.</p>
+    <h2>How to use the modules in your own LMS</h2>
+    <p class="lead">Every module comes in two formats. The <strong>.h5p</strong> file is best for Moodle, WordPress and the Lumi editor, and lets you translate or adapt the content. The <strong>SCORM 1.2</strong> package (.zip) works in almost any LMS, including Canvas, Blackboard, Brightspace, TalentLMS and Moodle, and reports completion and score to the gradebook.</p>
     <div class="tabs" role="tablist">
       <button role="tab" aria-selected="true" data-p="moodle">Moodle</button>
+      <button role="tab" aria-selected="false" data-p="scorm">SCORM (any LMS)</button>
       <button role="tab" aria-selected="false" data-p="wp">WordPress</button>
       <button role="tab" aria-selected="false" data-p="other">Canvas, Blackboard &amp; other LMS</button>
       <button role="tab" aria-selected="false" data-p="lumi">Offline / editing (Lumi)</button>
@@ -119,6 +127,40 @@ footer .flag{flex:none;width:64px;height:43px;background:#039;border-radius:3px;
       </ol>
       <p class="tip">Works in Moodle 3.9 and later, which include H5P out of the box. If the upload is refused because of its size, ask your Moodle administrator to raise the maximum upload size. If Moodle says a content type is missing, the administrator can allow it under <em>Site administration → H5P → Manage H5P content types</em>.</p>
     </div>
+    <div class="pane" id="p-scorm" hidden>
+      <p>Download the module's SCORM package (the <em>SCORM</em> button on its card). Keep the .zip as it is: do not unzip it.</p>
+      <details open><summary>Moodle</summary>
+      <ol>
+        <li>In your course, turn <strong>Edit mode</strong> on and click <strong>Add an activity or resource → SCORM package</strong>.</li>
+        <li>Give it a name and drag the .zip into <strong>Package file</strong>.</li>
+        <li>Under <strong>Appearance</strong>, set <strong>Display package</strong> to <em>New window</em> or <em>Current window</em> and the size to 100% wide.</li>
+        <li>Under <strong>Grade</strong>, choose <em>Highest grade</em>. Under <strong>Activity completion</strong>, you can require status “completed” or a passing grade.</li>
+        <li>Click <strong>Save and display</strong>.</li>
+      </ol>
+      </details>
+      <details><summary>Canvas</summary>
+      <ol>
+        <li>In your course, go to <strong>Settings → Import Course Content</strong>.</li>
+        <li>Choose <strong>Content Type: SCORM package</strong>, select the .zip and click <strong>Import</strong>.</li>
+        <li>The module appears as a graded assignment. Publish it when you are ready.</li>
+      </ol>
+      <p class="tip">If you don't see the SCORM option, ask your Canvas administrator to enable the SCORM app for your account.</p>
+      </details>
+      <details><summary>Blackboard Learn</summary>
+      <ol>
+        <li>Open a content area and choose <strong>Build Content → Content Package (SCORM)</strong>. In Ultra courses, click <strong>+ → Create → SCORM package</strong>.</li>
+        <li>Browse to the .zip, click <strong>Submit</strong>, then give it a title.</li>
+        <li>Turn on <strong>Grading</strong> if you want the score in the Grade Center, and click <strong>Submit</strong>.</li>
+      </ol>
+      </details>
+      <details><summary>Brightspace (D2L) and other platforms</summary>
+      <ol>
+        <li>In Brightspace, open <strong>Content</strong>, choose a module and click <strong>Upload / Create → Add a SCORM Package</strong>, then upload the .zip.</li>
+        <li>In other platforms (TalentLMS, Docebo, Totara, Sakai and similar), look for <strong>Add SCORM</strong>, <strong>Import package</strong> or <strong>Upload content</strong> and select the .zip.</li>
+      </ol>
+      </details>
+      <p class="tip">The package reports <strong>completed</strong> when the learner has read every chapter, and a <strong>score</strong> (0–100) based on the knowledge-check questions. All media are inside the package, so it works without access to this website. Some packages are up to 80 MB: if the upload is refused, ask your LMS administrator to raise the maximum upload size.</p>
+    </div>
     <div class="pane" id="p-wp" hidden>
       <ol>
         <li>In WordPress, go to <strong>Plugins → Add New</strong>, search for <strong>“H5P”</strong>, then install and activate it.</li>
@@ -131,7 +173,7 @@ footer .flag{flex:none;width:64px;height:43px;background:#039;border-radius:3px;
     <div class="pane" id="p-other" hidden>
       <p>Canvas, Blackboard, Brightspace and most other platforms don't read .h5p files directly. Three ways to use the modules there:</p>
       <ol>
-        <li><strong>SCORM package:</strong> open the .h5p in the free <a href="https://lumi.education" target="_blank" rel="noopener">Lumi</a> app and choose <em>Export → SCORM</em>. Upload the resulting SCORM package to your LMS like any other SCORM course.</li>
+        <li><strong>SCORM package (recommended):</strong> click <em>SCORM</em> on the module's card and upload the .zip to your LMS. See the <a href="#use-h5p" data-goto="scorm">SCORM tab</a> for step-by-step instructions.</li>
         <li><strong>H5P.com:</strong> if your institution subscribes to H5P.com, upload the file there and connect it to your LMS through LTI so scores reach the gradebook.</li>
         <li><strong>Simple link or embed:</strong> link to the module's <em>Start module</em> address from this page, or embed it in an iframe. Learners can use it, but scores are not recorded.</li>
       </ol>
@@ -188,7 +230,9 @@ const MODULES = [
   "thumb": "thumbs/intro-research-ethics.jpg",
   "url": "modules/intro-research-ethics/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/intro-research-ethics.h5p",
-  "size": "51 MB"
+  "size": "51 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/intro-research-ethics-scorm12.zip",
+  "scorm_size": "53 MB"
  },
  {
   "slug": "research-integrity",
@@ -205,7 +249,9 @@ const MODULES = [
   "thumb": "thumbs/research-integrity.jpg",
   "url": "modules/research-integrity/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/research-integrity.h5p",
-  "size": "79 MB"
+  "size": "79 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/research-integrity-scorm12.zip",
+  "scorm_size": "80 MB"
  },
  {
   "slug": "ethical-toolbox",
@@ -223,7 +269,9 @@ const MODULES = [
   "thumb": "thumbs/ethical-toolbox.jpg",
   "url": "modules/ethical-toolbox/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/ethical-toolbox.h5p",
-  "size": "20 MB"
+  "size": "20 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/ethical-toolbox-scorm12.zip",
+  "scorm_size": "22 MB"
  },
  {
   "slug": "informed-consent",
@@ -240,7 +288,9 @@ const MODULES = [
   "thumb": "thumbs/informed-consent.jpg",
   "url": "modules/informed-consent/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/informed-consent.h5p",
-  "size": "33 MB"
+  "size": "33 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/informed-consent-scorm12.zip",
+  "scorm_size": "34 MB"
  },
  {
   "slug": "confidentiality-privacy",
@@ -257,7 +307,9 @@ const MODULES = [
   "thumb": "thumbs/confidentiality-privacy.jpg",
   "url": "modules/confidentiality-privacy/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/confidentiality-privacy.h5p",
-  "size": "4 MB"
+  "size": "4 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/confidentiality-privacy-scorm12.zip",
+  "scorm_size": "5 MB"
  },
  {
   "slug": "vulnerable-populations",
@@ -275,7 +327,9 @@ const MODULES = [
   "thumb": "thumbs/vulnerable-populations.jpg",
   "url": "modules/vulnerable-populations/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/vulnerable-populations.h5p",
-  "size": "30 MB"
+  "size": "30 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/vulnerable-populations-scorm12.zip",
+  "scorm_size": "31 MB"
  },
  {
   "slug": "data-integrity",
@@ -293,7 +347,9 @@ const MODULES = [
   "thumb": "thumbs/data-integrity.jpg",
   "url": "modules/data-integrity/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/data-integrity.h5p",
-  "size": "67 MB"
+  "size": "67 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/data-integrity-scorm12.zip",
+  "scorm_size": "68 MB"
  },
  {
   "slug": "publication-ethics",
@@ -310,7 +366,9 @@ const MODULES = [
   "thumb": "thumbs/publication-ethics.jpg",
   "url": "modules/publication-ethics/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/publication-ethics.h5p",
-  "size": "74 MB"
+  "size": "74 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/publication-ethics-scorm12.zip",
+  "scorm_size": "75 MB"
  },
  {
   "slug": "conflicts-of-interest",
@@ -327,7 +385,9 @@ const MODULES = [
   "thumb": "thumbs/conflicts-of-interest.jpg",
   "url": "modules/conflicts-of-interest/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/conflicts-of-interest.h5p",
-  "size": "35 MB"
+  "size": "35 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/conflicts-of-interest-scorm12.zip",
+  "scorm_size": "36 MB"
  },
  {
   "slug": "risk-management",
@@ -344,7 +404,9 @@ const MODULES = [
   "thumb": "thumbs/risk-management.jpg",
   "url": "modules/risk-management/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/risk-management.h5p",
-  "size": "43 MB"
+  "size": "43 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/risk-management-scorm12.zip",
+  "scorm_size": "44 MB"
  },
  {
   "slug": "genetics-research",
@@ -362,7 +424,9 @@ const MODULES = [
   "thumb": "thumbs/genetics-research.jpg",
   "url": "modules/genetics-research/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/genetics-research.h5p",
-  "size": "73 MB"
+  "size": "73 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/genetics-research-scorm12.zip",
+  "scorm_size": "74 MB"
  },
  {
   "slug": "animal-research",
@@ -379,7 +443,9 @@ const MODULES = [
   "thumb": "thumbs/animal-research.jpg",
   "url": "modules/animal-research/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/animal-research.h5p",
-  "size": "40 MB"
+  "size": "40 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/animal-research-scorm12.zip",
+  "scorm_size": "41 MB"
  },
  {
   "slug": "intro-ai-research-ethics",
@@ -398,7 +464,9 @@ const MODULES = [
   "thumb": "thumbs/intro-ai-research-ethics.jpg",
   "url": "modules/intro-ai-research-ethics/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/intro-ai-research-ethics.h5p",
-  "size": "54 MB"
+  "size": "54 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/intro-ai-research-ethics-scorm12.zip",
+  "scorm_size": "55 MB"
  },
  {
   "slug": "ai-oversight",
@@ -416,7 +484,9 @@ const MODULES = [
   "thumb": "thumbs/ai-oversight.jpg",
   "url": "modules/ai-oversight/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/ai-oversight.h5p",
-  "size": "65 MB"
+  "size": "65 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/ai-oversight-scorm12.zip",
+  "scorm_size": "66 MB"
  },
  {
   "slug": "ai-clinical-research",
@@ -433,7 +503,9 @@ const MODULES = [
   "thumb": "thumbs/ai-clinical-research.jpg",
   "url": "modules/ai-clinical-research/",
   "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/ai-clinical-research.h5p",
-  "size": "48 MB"
+  "size": "48 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/ai-clinical-research-scorm12.zip",
+  "scorm_size": "49 MB"
  }
 ];
 const THEMES = ["All", ...new Set(MODULES.map(m => m.theme))];
@@ -456,7 +528,8 @@ function render(){
         <div class="meta"><span><b>${m.chapters}</b> chapters</span>${m.videos ? `<span><b>${m.videos}</b> videos</span>` : ""}${m.quizzes ? `<span><b>${m.quizzes}</b> questions</span>` : ""}</div>
         <div class="actions">
           <a class="btn primary" href="${m.url}" target="_blank" rel="noopener">${ICON_PLAY} Start module</a>
-          <a class="btn ghost" href="${m.download}" download="${m.slug}.h5p">${ICON_DL} Download H5P <small>${m.size}</small></a>
+          <a class="btn ghost" href="${m.download}" download="${m.slug}.h5p" title="H5P file for Moodle, WordPress or Lumi">${ICON_DL} H5P <small>${m.size}</small></a>
+          <a class="btn ghost" href="${m.scorm}" download="${m.slug}-scorm12.zip" title="SCORM 1.2 package for any LMS">${ICON_DL} SCORM <small>${m.scorm_size}</small></a>
         </div>
       </div>
     </article>`).join("") : '<div class="empty">No module matches your search.</div>';
@@ -480,6 +553,12 @@ document.querySelector(".tabs").addEventListener("click", e => {
   document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-selected", x === b));
   document.querySelectorAll(".pane").forEach(p => p.hidden = p.id !== "p-" + b.dataset.p);
 });
+document.addEventListener("click", e => {
+  const g = e.target.closest("[data-goto]"); if (!g) return;
+  const b = document.querySelector('.tabs button[data-p="' + g.dataset.goto + '"]'); if (b) b.click();
+});
+(function(){const q=new URLSearchParams(location.search).get("tab");if(q){const b=document.querySelector('.tabs button[data-p="'+q+'"]');if(b)b.click()}
+  if(document.documentElement.classList.contains("embedded"))document.querySelectorAll('a[href^="#use-h5p"]').forEach(a=>{a.href="./?tab="+(a.dataset.goto||"moodle")+"#use-h5p";a.target="_blank";a.rel="noopener"});})();
 render();
 </script>
 </body>
