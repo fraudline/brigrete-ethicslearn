@@ -75,7 +75,7 @@ footer .flag{flex:none;width:64px;height:43px;background:#039;border-radius:3px;
 @media (max-width:760px){.how,.info{grid-template-columns:1fr}.how{margin-top:20px}.hero{padding:40px 0 44px}.grid{grid-template-columns:1fr}.search{width:100%}}
 </style>
 <script>if(window.self!==window.top||/[?&]embed=1/.test(location.search))document.documentElement.classList.add("embedded")</script>
-<style>.embedded body>footer{display:none}.embedded .hero{padding:24px 0 44px}.embedded .bar{margin-top:20px;margin-bottom:14px}.embedded .guide{margin-top:22px}.embedded .info{margin-bottom:4px}@media (max-width:480px){.embedded .card .thumb{height:52px}.embedded .how{gap:10px}.embedded .how div{padding:12px 14px}.embedded .how p{font-size:14px}.embedded .guide{padding:18px 16px}.embedded .card .body{padding:14px 16px}.embedded .card h3{font-size:17px;margin:2px 0 6px}.embedded .card p{font-size:14px;line-height:1.45}.embedded .hero{padding:24px 0 32px}}</style>
+<style>.embedded body>footer{display:none}.embedded .hero{padding:24px 0 44px}.embedded .bar{margin-top:20px;margin-bottom:14px}.embedded .guide{margin-top:22px}.embedded .info{margin-bottom:4px}@media (max-width:480px){.embedded .card .thumb{height:52px}.embedded .how{gap:10px}.embedded .how div{padding:12px 14px}.embedded .how p{font-size:14px}.embedded .guide{padding:18px 16px}.embedded .card .body{padding:14px 16px}.embedded .card h3{font-size:17px;margin:2px 0 6px}.embedded .card p{font-size:14px;line-height:1.45}.embedded .hero{padding:24px 0 32px}.embedded .card .theme{display:none}.embedded .card .authors{margin-bottom:8px}.embedded .card .meta{margin:auto 0 10px;padding-top:8px}.embedded .actions{grid-template-columns:1.3fr 1fr 1fr;gap:6px}.embedded .actions .primary{grid-column:auto}.embedded .actions .btn{padding:9px 4px;font-size:13.5px;gap:5px}.embedded .actions .btn small{display:none}.embedded .actions .btn{white-space:nowrap}.embedded .actions .primary svg{display:none}}</style>
 </head>
 <body>
 <header class="hero">
@@ -525,6 +525,25 @@ const MODULES = [
   "size": "29 MB",
   "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/rri-scorm12.zip",
   "scorm_size": "28 MB"
+ },
+ {
+  "slug": "dei",
+  "title": "Diversity, Equity and Inclusion in Research: Enhancing Research Design and Teams",
+  "theme": "Research practice",
+  "partner": "Fraud Line",
+  "desc": "DEI concepts, bias across the research process, inclusive recruitment, DEI questions for ethics review, and four case studies.",
+  "authors": [
+   "Efrosini Mitsaina"
+  ],
+  "chapters": 23,
+  "videos": 6,
+  "quizzes": 35,
+  "thumb": "thumbs/dei.jpg",
+  "url": "modules/dei/",
+  "download": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/h5p/dei.h5p",
+  "size": "17 MB",
+  "scorm": "https://github.com/fraudline/brigrete-ethicslearn/raw/downloads/scorm/dei-scorm12.zip",
+  "scorm_size": "18 MB"
  }
 ];
 const THEMES = ["All", ...new Set(MODULES.map(m => m.theme))];
